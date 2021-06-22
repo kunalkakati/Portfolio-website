@@ -1,0 +1,470 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto:wght@100;300;400;500;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+} 
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Roboto', sans-serif;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+}
+  
+  /* NavBar .....................................................*/
+  .logo{
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+  .nav-bar{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -55px;
+    padding: 30px;
+  }
+  
+  .nav-bar li{
+    display: inline;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-family: 'Cutive Mono', monospace;
+    font-weight: 600;
+  }
+  
+  .nav-bar li a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-bar li a:hover{
+    color: green;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  @media(max-width: 700px){
+    .logo{
+      color:transparent;
+    }
+  }
+
+  /* Body....................................................... */
+  .body{
+    width: 1500px;
+    height: auto;
+    margin-top: 30px;
+  }
+  
+  .color{
+    height: 650px;
+    width: 50%;
+    background-color: #21bf73;
+    content: "";
+  }
+
+/* Card */
+  .card{
+    display: flex;
+    position: absolute;
+    top: 200px;
+    left: 417px;
+  }
+  
+  /* left Card or first card.............................................*/
+  .fst-card{
+    width: 380px;
+    height: 500px;
+    background-color: #b0eacd;
+    box-shadow: 5px 5px 30px black;
+  }
+
+  .img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid none;
+    border-radius: 122px;
+    margin: 48px 0 0 85px;
+  }
+
+  .fst-card h1, h2{
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+  hr{
+    width: 100px;
+    margin: 30px 0 23px 135px;
+    color: blue;
+    border: 1px solid blue;
+  }
+  .icon{
+    background-color: #fff;
+    height: 50px;
+    margin-top: 44px;
+    
+  }
+  .icon-container{
+    padding: 16px 0 0 71px;
+  }
+
+  .icon-container a{
+    padding-left: 30px;
+    font-size: 1.3rem;
+    color: black;
+  }
+
+  .icon-container a:hover{
+    color: blue;
+    
+  }
+
+  /* Right Card or Secound Card .....................................................*/
+  .snd-card{
+    width: 380px;
+    height: 500px;
+    padding-left: 4%;
+    background-color: white;
+  }
+  .snd-card h1{
+    padding-top: 33px;
+    font-size: 8rem;
+  }
+  .snd-card h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 30px;
+  }
+
+  .btn button:first-child{
+    width: 140px;
+    height: 40px;
+    border: 2px solid blue;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+    transition: .9s;
+  }
+
+  .btn button:first-child:hover{
+    background-color: #fff;
+    color: black;
+  }
+
+  .btn button:last-child{
+    width: 140px;
+    height: 40px;
+    border: 2px solid blue;
+    background-color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+    transition: .9s;
+  }
+
+  .btn button:last-child:hover{
+    background-color: blue;
+    color: #fff;
+  }
+
+  .snd-card p{
+    line-height: 1.5;
+    margin-top: 18px;
+    color: rgb(43, 41, 41);
+  }
+
+  @media(max-width: 700px){
+    .body{
+      width: 100%;
+    }
+    .color{
+      width: 100%;
+      height: 1100px;
+    }
+    .card{
+      display: inline;
+      position: absolute;
+      top: 170px;
+      left: 60px;
+    }
+    .snd-card{
+      width: 365px;
+      padding-top: 0;
+      background-color: #21bf73;
+    }
+    .btn button:last-child{
+      background-color: rgb(242, 250, 242);
+      color: black;
+    }
+  }
+  
+/* Projrcts .................................................*/
+
+#projrct-container{
+  margin-top: 150px;
+  /* width: 100%; */
+  height: 510px;
+  padding:30px;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: auto;
+  gap: 190px;
+  
+}
+
+
+.project{
+  text-align: center;
+}
+.project img{
+  width: 349px;
+  height: 250px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.project h1{
+  font-size: 2rem;
+  padding: 40px 0 20px 0;
+}
+
+.project p{
+  color: rgb(41, 39, 39);
+  line-height: 1.5;
+  padding: 0 10px;
+}
+
+.project button{
+  width: 350px;
+  height: 50px;
+  background-color: #28df99;
+  border: none;
+  margin-top: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .5s;
+}
+.project button:hover{
+  background-color: #99f3bd;
+}
+
+
+@media (max-width: 700px){
+  #projrct-container{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: auto;
+    gap: 30px;
+  }
+}
+/* About Me ......................................*/
+
+#about{
+  text-align: center;
+}
+
+#about h1{
+  font-size: 2.2rem;
+  padding:60px 0 40px 0;
+}
+
+#about p{
+  padding: 0 140px;
+  line-height: 1.7;
+  color: rgb(31, 28, 28);
+  padding-bottom: 20px;
+}
+
+@media(max-width: 700px){
+  #about{
+    margin-top: 1200px;
+    text-align: center;
+    height: 400px;
+    overflow: scroll;
+  }
+  #about p{
+    padding: 0 40px;
+  }
+}
+
+/* Contect Me */
+
+#contect{
+  width: 98%;
+  height: auto;
+  background-color: rgb(172, 230, 172);
+  margin: 20px;
+  display: flex;
+}
+
+/* personal data.............. */
+
+.info{
+  width: 50%;
+  height: 344px;
+  padding-top: 56px;
+}
+
+.info h1{
+  padding:20px 0 20px 176px;
+}
+.info p{
+  padding:20px 0 20px 176px;
+}
+
+.info p i{
+  font-size: 1.7rem;
+  padding-right: 10px;
+}
+
+.info p span{
+  font-weight: 600;
+}
+
+
+/* From............... */
+
+.contect-form{
+  width: 50%;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+}
+
+.contect-form input{
+  width: 400px;
+  margin:10px 0 0 100px;
+  height: 30px;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.contect-form textarea{
+  width: 400px;
+  margin:10px 0 0 100px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+.contect-form label{
+  margin:20px 0 0 100px;
+  font-size: 1.2rem;
+}
+
+.contect-form button{
+  width: 120px;
+  height: 40px;
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+  margin: 12px 0 0 239px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 2px;
+  transition: .6s;
+}
+.contect-form button:hover{
+  border: 2px solid green;
+  background-color: #fff;
+  color: #333;
+  letter-spacing: 2px;
+}
+@media(max-width: 700px){
+  #contect{
+    background-color: rgb(172, 230, 172);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    height: 600px;
+  }
+  .info{
+    width: 100%;
+    height: 50px;
+  }
+    
+  .info h1{
+    padding:20px 0 20px 20px;
+    text-align: center;
+  }
+  .info p{
+    padding:20px 0 20px 20px;
+    display: inline;
+    font-size: 0.7rem;
+    position: relative;
+    top: 400px;
+    left: 20px;
+  }    
+  .contect-form input{
+    margin: 10px 0 0 50px;
+  }
+  .contect-form textarea{
+    margin: 10px 0 0 50px;
+  }
+  .contect-form button{
+    margin: 12px 0 0 186px;
+  }
+  .contect-form label{
+    margin:20px 0 0 50px;
+  }
+  
+}
+
+/* Footer */
+
+.footer{
+  width: 97%;
+  height: 80px;
+  /* background-color: purple; */
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.footer-icon{
+  padding-left: 600px;
+}
+
+.footer-icon p{
+  padding:0 0 15px 21px;
+  font-size: 1.2rem;
+
+}
+
+
+.footer-icon div a{
+  color:black;
+  margin:10px 60px 0 0;
+  font-size: 1.2rem;
+}
+
+.footer-icon div a:hover{
+  color: aqua;
+}
+
+@media(max-width: 700px){
+  .footer{
+    width: 100%;
+    margin: 0;
+  }
+  .footer-icon{
+    padding-left: 130px;
+  }
+}
+
+
+/* End */
